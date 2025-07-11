@@ -15,6 +15,7 @@ export interface Offers {
 }
 
 export interface PropertyProps {
+  id: string | string[] | undefined;
   name: string;
   address: {
     state: string;

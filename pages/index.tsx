@@ -8,6 +8,7 @@ import Listings from "@/components/layout/Listings"
 import Searchfilter from "@/components/layout/Searchfilter";
 import { PropertyProps } from "@/interfaces";
 import { useEffect } from "react";
+import PropertyDetail from '../components/layout/PropertyDetail';
 
 
 
@@ -49,7 +50,7 @@ export default function Layout() {
               </div>
           </div>
         </div>
-        <Listings properties={properties} loading={loading} error={error}/>
+        <Listings PropertyDetail={properties} loading={loading} error={error}/>
       </main>
       <Footer />
     </div>
