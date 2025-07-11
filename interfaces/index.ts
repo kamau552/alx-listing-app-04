@@ -39,3 +39,11 @@ export interface PropertyProps {
 export interface PropertyCardProps {
   data: PropertyProps;
 }
+
+
+export interface Review {
+  id: string;
+  comment: string;
+  reviewer: string;
+  rating: number;
+}

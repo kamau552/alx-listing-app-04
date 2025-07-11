@@ -1,5 +1,6 @@
 import React from "react";
 import { PropertyProps } from "@/interfaces";
+import ReviewSection from "../property/ReviewSection";
 
 const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => {
   return (
@@ -9,6 +10,8 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
       <p>{property.price} per night</p>
       <p>{property.description}</p>
       {/* You can also show categories, rating, etc */}
+      <ReviewSection propertyId={property.id} />
+
     </div>
   );
 };
